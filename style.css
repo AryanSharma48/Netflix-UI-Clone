@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter";
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+    align-items: center;
+    padding: 0px 125px;
+    
+}
+
+
+img{
+    width: 190px;
+    margin-top: 0rem;
+    
+}
+
+select {
+    padding: 7px 16px;
+    border-radius: 4px ;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.542);
+    font-size: 15px;
+    color: white;
+    border: 1px solid grey;
+}
+
+
+.signin{
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 9px 17px;
+    font-weight: bold;
+    margin-left:4px;
+    margin-right: 45px;
+    font-size: 14px;
+}
