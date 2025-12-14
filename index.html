@@ -17,27 +17,34 @@
 
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="netlix logo">
+            <img src="images/logo.png" alt="netflix logo">
         </div>
         <div>
 
             <select name="language" id="language">
-                <option value="english">English</option>
-                <option value="hindi">हिन्दी</option>
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
             </select>
 
-            <button class="signin">Sign In</button>
+            <button class="signin" data-i18n="signin-btn">Sign In</button>
         </div>
     </header>
 
     <main>
-        <h2>Unlimited movies,</h2>
-        <h2 class="last-h2">shows, and more</h2>
-        <h6>Starts at ₹149. Cancel at any time.</h6>
-        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <h2 data-i18n="title-line1">Unlimited movies,</h2>
+        <h2 class="last-h2" data-i18n="title-line2">shows, and more</h2>
+        <h6 data-i18n="subtitle">Starts at ₹149. Cancel at any time.</h6>
+        <p data-i18n="description">
+            Ready to watch? Enter your email to create or restart your membership.
+        </p>
         <div class="getting-started">
-            <input id="email-input-element" type="email" placeholder="Email address">
-            <span><button id="get-started-btn" class="getstarted">Get Started <img src="images/next-btn.png" alt="next button"></button></span>
+            <input id="email-input-element" type="email" placeholder="Email address"
+                data-i18n-placeholder="email-placeholder">
+            <span>
+                <button id="get-started-btn" class="getstarted">
+                   <span class="getting-started-btn" data-i18n="get-started-btn"> Get Started </span><img src="images/next-btn.png" alt="next button">
+                </button>
+            </span>
         </div>
     </main>
 

@@ -121,6 +121,11 @@ main p{
     padding: 1rem 2.1rem;
     font-size: 24px;
     margin-left: 0.3rem;
+    
+}
+
+.getting-started-btn{
+    margin-right: 1rem;
 }
 
 .getstarted img{
