@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
 }
 
+
 header{
     display: flex;
     justify-content: space-between;
@@ -33,12 +34,14 @@ select {
     background-color: rgba(0, 0, 0, 0.542);
     font-size: 15px;
     color: white;
+    font-family: inter;
     border: 1px solid grey;
 }
 
 
 .signin{
     background-color: red;
+    font-family: inter;
     border: none;
     color: white;
     border-radius: 4px;
@@ -47,4 +50,29 @@ select {
     margin-left:4px;
     margin-right: 45px;
     font-size: 14px;
+}
+
+main{
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+main input{
+    font-family: inter;
+    border-radius: 4px;
+    border: 1px solid grey;
+    
+}
+
+.getstarted{
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    font-family: inter;
+    font-weight: bold;
 }
