@@ -38,6 +38,11 @@ select {
     border: 1px solid grey;
 }
 
+option{
+    background-color: white;
+    color: black;
+}
+
 
 .signin{
     background-color: red;
@@ -52,6 +57,10 @@ select {
     font-size: 14px;
 }
 
+.signin:hover{
+    cursor: pointer;
+}
+
 main{
     margin-top: 9rem;
     display: flex;
@@ -61,12 +70,46 @@ main{
     color: white;
 }
 
+main h2{
+    font-size: 60px;
+    /* margin-bottom: 10px; */
+}
+
+.last-h2{
+    margin-bottom: 15px;
+}
+
+main h6{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
 main input{
     font-family: inter;
     border-radius: 4px;
-    border: 1px solid grey;
+    border: 1px solid #B9B8B8;
+    padding: 1rem 2rem ;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.37);    
+    caret-color: white;
+    color:white;
     
 }
+
+main input::placeholder{
+    color: #B9B8B8;
+    font-size: 15px;
+    
+}
+
+
+
+main p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
 
 .getstarted{
     color: white;
@@ -75,4 +118,15 @@ main input{
     border-radius: 4px;
     font-family: inter;
     font-weight: bold;
+    padding: 1rem 2.1rem;
+    font-size: 24px;
+    margin-left: 0.3rem;
+}
+
+.getstarted img{
+    width: 20px;
+}
+
+.getstarted:hover{
+    cursor: pointer;
 }
