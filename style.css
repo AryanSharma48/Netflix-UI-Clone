@@ -35,7 +35,7 @@ select {
     font-size: 15px;
     color: white;
     font-family: inter;
-    border: 1px solid grey;
+    border: 1px solid #5E5E5E;
 }
 
 option{
@@ -62,7 +62,7 @@ option{
 }
 
 main{
-    margin-top: 9rem;
+    margin-top:10rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -71,7 +71,8 @@ main{
 }
 
 main h2{
-    font-size: 60px;
+    font-size: 58px;
+    font-weight: 800;
     /* margin-bottom: 10px; */
 }
 
@@ -86,11 +87,11 @@ main h6{
 
 main input{
     font-family: inter;
-    border-radius: 4px;
-    border: 1px solid #B9B8B8;
+    border-radius: 6px;
+    border: 1px solid #5E5E5E;
     padding: 1rem 2rem ;
     font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.37);    
+    background-color: rgba(0, 0, 0, 0.656);    
     caret-color: white;
     color:white;
     
@@ -115,7 +116,7 @@ main p{
     color: white;
     background-color: red;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-family: inter;
     font-weight: bold;
     padding: 1rem 2.1rem;

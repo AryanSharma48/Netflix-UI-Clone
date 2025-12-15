@@ -30,9 +30,9 @@ const languageSelect = document.getElementById("language");
 
 function setLanguage(lang) {
     // Update visible text
-    const textElements = document.querySelectorAll("[data-i18n]");
+    const textElements = document.querySelectorAll("[data-lang]");
     textElements.forEach(el => {
-        const key = el.getAttribute("data-i18n");
+        const key = el.getAttribute("data-lang");
         const translation = translations[lang][key];
         if (translation) {
             el.textContent = translation;
@@ -40,9 +40,9 @@ function setLanguage(lang) {
     });
 
     // Update placeholders
-    const placeholderElements = document.querySelectorAll("[data-i18n-placeholder]");
+    const placeholderElements = document.querySelectorAll("[data-lang-placeholder]");
     placeholderElements.forEach(el => {
-        const key = el.getAttribute("data-i18n-placeholder");
+        const key = el.getAttribute("data-lang-placeholder");
         const translation = translations[lang][key];
         if (translation) {
             el.setAttribute("placeholder", translation);
