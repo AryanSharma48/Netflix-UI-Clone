@@ -16,39 +16,52 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="netflix logo">
+    <div class="hero">
+
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="netflix logo">
+            </div>
+            <div>
+
+                <select name="language" id="language">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+
+                <button class="signin" data-lang="signin-btn">Sign In</button>
+            </div>
+        </header>
+
+        <main>
+            <h2 data-lang="title-line1">Unlimited movies,</h2>
+            <h2 class="last-h2" data-lang="title-line2">shows, and more</h2>
+            <h6 data-lang="subtitle">Starts at ₹149. Cancel at any time.</h6>
+            <p data-lang="description">
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+            <div class="getting-started">
+                <input id="email-input-element" type="email" placeholder="Email address"
+                    data-lang-placeholder="email-placeholder">
+                <span>
+                    <button id="get-started-btn" class="getstarted">
+                        <span class="getting-started-btn" data-lang="get-started-btn"> Get Started </span><img
+                            src="images/next-btn.png" alt="next button">
+                    </button>
+                </span>
+            </div>
+        </main>
+    </div>
+    <hr>
+
+    <section class="scroll-section">
+        <div class="trending-now">
+            <h3>Trending Now</h3>
+            
         </div>
-        <div>
 
-            <select name="language" id="language">
-                <option value="en">English</option>
-                <option value="hi">हिन्दी</option>
-            </select>
-
-            <button class="signin" data-lang="signin-btn">Sign In</button>
-        </div>
-    </header>
-
-    <main>
-        <h2 data-lang="title-line1">Unlimited movies,</h2>
-        <h2 class="last-h2" data-lang="title-line2">shows, and more</h2>
-        <h6 data-lang="subtitle">Starts at ₹149. Cancel at any time.</h6>
-        <p data-lang="description">
-            Ready to watch? Enter your email to create or restart your membership.
-        </p>
-        <div class="getting-started">
-            <input id="email-input-element" type="email" placeholder="Email address"
-                data-lang-placeholder="email-placeholder">
-            <span>
-                <button id="get-started-btn" class="getstarted">
-                   <span class="getting-started-btn" data-lang="get-started-btn"> Get Started </span><img src="images/next-btn.png" alt="next button">
-                </button>
-            </span>
-        </div>
-    </main>
-
+    </section>
+    
     <script src="script.js"></script>
 </body>
 

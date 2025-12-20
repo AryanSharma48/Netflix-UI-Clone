@@ -1,35 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
+    /* position: relative; */
     font-family: "Inter";
-    background-image: url(images/bg.jpg);
-    background-repeat: no-repeat;
+
+    /* background-repeat: no-repeat; */
+    /* background:fixed; */
+    /* height: 100vh; */
 }
 
+.hero {
+    height: 95vh;
+    position: relative;
+    background: url(images/bg.jpg) center/cover no-repeat;
+}
 
-header{
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 95vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+
+}
+
+.hero >* {
+
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    /* position: relative; */
     display: flex;
     justify-content: space-between;
-    margin-top: 0.8rem;
+
     align-items: center;
-    padding: 0px 125px;
-    
+    padding: 15px 125px;
+    /* z-index: 2; */
+
 }
 
 
-img{
+img {
     width: 190px;
     margin-top: 0rem;
-    
+
 }
 
 select {
     padding: 7px 16px;
-    border-radius: 4px ;
+    border-radius: 4px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.542);
     font-size: 15px;
@@ -38,31 +64,32 @@ select {
     border: 1px solid #5E5E5E;
 }
 
-option{
+option {
     background-color: white;
     color: black;
 }
 
 
-.signin{
-    background-color: red;
+.signin {
+    background-color: #E50914;
     font-family: inter;
     border: none;
     color: white;
     border-radius: 4px;
     padding: 9px 17px;
     font-weight: bold;
-    margin-left:4px;
+    margin-left: 4px;
     margin-right: 45px;
     font-size: 14px;
 }
 
-.signin:hover{
+.signin:hover {
     cursor: pointer;
 }
 
-main{
-    margin-top:10rem;
+main {
+    /* position: relative; */
+    margin-top: 8.5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -70,51 +97,55 @@ main{
     color: white;
 }
 
-main h2{
+main h2 {
     font-size: 58px;
     font-weight: 800;
     /* margin-bottom: 10px; */
 }
 
-.last-h2{
+.last-h2 {
     margin-bottom: 15px;
 }
 
-main h6{
+main h6 {
     font-size: 20px;
     margin-bottom: 35px;
 }
 
-main input{
+main input {
     font-family: inter;
     border-radius: 6px;
     border: 1px solid #5E5E5E;
-    padding: 1rem 2rem ;
+    /* padding: 1rem 0rem; */
     font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.656);    
+    background-color: rgba(0, 0, 0, 0.656);
     caret-color: white;
-    color:white;
-    
+    color: white;
+    text-indent: 20px;
+    height: 62px;
+    line-height: 50px;
+    width: 23rem;
+
 }
 
-main input::placeholder{
+main input::placeholder {
     color: #B9B8B8;
     font-size: 15px;
-    
+
 }
 
 
 
-main p{
+main p {
     font-size: 15px;
     margin-bottom: 15px;
 }
 
 
 
-.getstarted{
+.getstarted {
     color: white;
-    background-color: red;
+    background-color: #E50914;
     border: none;
     border-radius: 6px;
     font-family: inter;
@@ -122,17 +153,41 @@ main p{
     padding: 1rem 2.1rem;
     font-size: 24px;
     margin-left: 0.3rem;
-    
+
 }
 
-.getting-started-btn{
+.getting-started-btn {
     margin-right: 1rem;
 }
 
-.getstarted img{
+.getstarted img {
     width: 20px;
 }
 
-.getstarted:hover{
+.getstarted:hover {
     cursor: pointer;
+}
+
+hr{
+    height: 7px;
+    border:none;
+    background: linear-gradient(
+    to right,
+    #300a0a,   
+    #dc2626,  
+    #300a0a    
+    );
+}
+
+.scroll-section{
+    background-color: black;
+    height: 100px;
+}
+
+.trending-now{
+
+    background-color: inherit;
+    padding: 5rem 8rem;
+    color: white;
+    font-size: 1.5rem;
 }
